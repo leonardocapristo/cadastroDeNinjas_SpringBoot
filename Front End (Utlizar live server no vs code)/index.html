@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API de Ninjas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciar Ninjas</h1>
+
+    <!-- Buscar Todos -->
+    <button id="fetchAll" class="btn">Buscar Todos os Ninjas</button>
+    <div id="ninjaList" class="ninja-list"></div>
+
+    <!-- Buscar por ID -->
+    <input type="number" id="searchId" placeholder="Buscar por ID" />
+    <button id="fetchById" class="btn">Buscar Ninja</button>
+    <div id="ninjaDetail" class="ninja-detail"></div>
+
+    <!-- Adicionar Ninja -->
+    <h2>Adicionar Ninja</h2>
+    <input type="text" id="addName" placeholder="Nome" />
+    <input type="number" id="addIdade" placeholder="Idade" />
+    <button id="addNinja" class="btn">Adicionar Ninja</button>
+
+    <!-- Atualizar Ninja -->
+    <h2>Atualizar Ninja</h2>
+    <input type="number" id="updateId" placeholder="ID do Ninja" />
+    <input type="text" id="updateName" placeholder="Novo Nome" />
+    <input type="number" id="updateIdade" placeholder="Nova Idade" />
+    <button id="updateNinja" class="btn">Atualizar Ninja</button>
+
+    <!-- Deletar Ninja -->
+    <h2>Deletar Ninja</h2>
+    <input type="number" id="deleteId" placeholder="ID do Ninja" />
+    <button id="deleteNinja" class="btn">Deletar Ninja</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
