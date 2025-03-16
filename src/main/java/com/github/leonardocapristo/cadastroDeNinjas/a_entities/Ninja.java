@@ -1,4 +1,4 @@
-package com.github.leonardocapristo.cadastroDeNinjas.entities;
+package com.github.leonardocapristo.cadastroDeNinjas.a_entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

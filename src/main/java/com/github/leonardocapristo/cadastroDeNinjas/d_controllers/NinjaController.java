@@ -1,4 +1,4 @@
-package com.github.leonardocapristo.cadastroDeNinjas.zControllers;
+package com.github.leonardocapristo.cadastroDeNinjas.d_controllers;
 
 import java.util.List;
 
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.leonardocapristo.cadastroDeNinjas.entities.Ninja;
-import com.github.leonardocapristo.cadastroDeNinjas.services.NinjaServices;
+import com.github.leonardocapristo.cadastroDeNinjas.a_entities.Ninja;
+import com.github.leonardocapristo.cadastroDeNinjas.c_services.NinjaServices;
 
 @RestController
 @RequestMapping("/ninjas")

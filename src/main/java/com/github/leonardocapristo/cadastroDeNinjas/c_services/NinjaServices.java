@@ -1,4 +1,4 @@
-package com.github.leonardocapristo.cadastroDeNinjas.services;
+package com.github.leonardocapristo.cadastroDeNinjas.c_services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.github.leonardocapristo.cadastroDeNinjas.entities.Ninja;
-import com.github.leonardocapristo.cadastroDeNinjas.repositories.NinjaRepository;
+import com.github.leonardocapristo.cadastroDeNinjas.a_entities.Ninja;
+import com.github.leonardocapristo.cadastroDeNinjas.b_repositories.NinjaRepository;
 
 @Service
 
