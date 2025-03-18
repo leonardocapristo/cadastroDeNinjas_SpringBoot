@@ -16,25 +16,25 @@ public class NinjaServices {
     @Autowired
     private NinjaRepository ninjaRepository;
 	
-    public List<Ninja> findAll() {
+    public List<Ninja> buscarTodos() {
         return ninjaRepository.findAll();
     }
 
-    public Ninja findById(Long id) {
+    public Ninja buscarPorID(Long id) {
         Optional<Ninja> obj = ninjaRepository.findById(id);
         return obj.orElseThrow(() -> new RuntimeException("Ninja não encontrado"));
     }
 
-    public Ninja save(Ninja ninja) {
+    public Ninja salvarNovo(Ninja ninja) {
         return ninjaRepository.save(ninja);
     }
 
-    public void delete(Long id) {
+    public void deletar(Long id) {
     	ninjaRepository.deleteById(id);
     }
 
-    public Ninja update(Long id, Ninja updatedNinja) {
-        Ninja ninja = findById(id);
+    public Ninja atualizar(Long id, Ninja updatedNinja) {
+        Ninja ninja = buscarPorID(id);
         ninja.setName(updatedNinja.getName());
         ninja.setIdade(updatedNinja.getIdade());
         return ninjaRepository.save(ninja);
